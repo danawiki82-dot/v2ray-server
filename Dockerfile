@@ -9,9 +9,7 @@ RUN curl -L -o v2ray.zip https://github.com/v2fly/v2ray-core/releases/download/v
     mkdir -p /etc/v2ray && \
     mkdir -p /usr/local/bin && \
     mv v2ray /usr/local/bin/ && \
-    mv v2ctl /usr/local/bin/ && \
-    chmod +x /usr/local/bin/v2ray && \
-    chmod +x /usr/local/bin/v2ctl
+    chmod +x /usr/local/bin/v2ray
 
 COPY config.json /etc/v2ray/config.json
 
